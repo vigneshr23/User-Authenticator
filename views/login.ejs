@@ -1,0 +1,35 @@
+<h4>Use valid credentials to login to ap</h4>
+
+<form class="form" method="post" action="/login">
+	<input type="text" name="username" placeholder="Username" />
+	<input type="password" name="password" placeholder="Password" />
+	<button id="login">Login</button>
+</form>
+
+<li><a href="/register">Register</a></li>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+   <%#
+<script type="text/javascript">
+	console.log("login form..");
+	$('form').submit(function(e){
+		var data = $('form').serialize();
+		console.log(data);
+		$.ajax({
+			url: "/login",
+			method: "POST",
+			data: data,
+			success: function(data) {
+				console.log(data);
+			},
+			error: function(err) {
+				console.log(err);
+			}
+		});
+		e.preventDefault();
+	});
+</script>
+%>
